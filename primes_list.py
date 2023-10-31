@@ -22,9 +22,9 @@ def primes(n: int) -> list[int]:
 
 def main() -> None:
     """prints all primes below a million with a precomputed list (slow!)"""
-    primo = primes(1_000_000)
-    print(sys.getsizeof(primo))  # 632824 bytes
-    for p in primo:
+    first_primes = primes(1_000_000)
+    print(sys.getsizeof(first_primes))  # 632824 bytes
+    for p in first_primes:
         print(p)  # takes time before printing!
 
 

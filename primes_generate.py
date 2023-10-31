@@ -30,8 +30,9 @@ def all_primes() -> Iterator[int]:
 
 def main() -> None:
     """prints all primes below a million with a generator function (fast!)"""
-    print(sys.getsizeof(primes(1_000_000)))  # 208 bytes
-    for p in primes(1_000_000):
+    first_primes = primes(1_000_000)
+    print(sys.getsizeof(first_primes))  # 208 bytes
+    for p in first_primes:
         print(p)  # starts printing immediately!
 
 
